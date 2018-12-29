@@ -23,7 +23,7 @@ void Renglones(char origen[],char destino[]){
     ofstream texto2;
     char renglon[256];
     texto1.open(origen);
-    texto2.open(destino);
+    texto2.open(destino,ios::app);
 
     if(texto1.good())
         while(!texto1.eof()){
